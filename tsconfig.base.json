@@ -8,13 +8,18 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
+    "resolveJsonModule": true,
     "target": "es2015",
     "module": "esnext",
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@books/books-list": ["libs/books-list/src/index.ts"],
+      "@books/core": ["libs/core/src/index.ts"],
+      "@books/shared": ["libs/shared/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,7 @@
+<p-dropdown
+  [options]="(facade.languages$ | async)!"
+  [ngModel]="facade.selectedLanguage$ | async"
+  (ngModelChange)="facade.selectLanguage($event)"
+  [autoDisplayFirst]="false"
+  appendTo="body"
+  styleClass="language-toggler"></p-dropdown>

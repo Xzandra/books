@@ -1,0 +1,4 @@
+<span class="p-input-icon-left">
+  <i class="pi pi-search"></i>
+  <input #searchInput type="text" pInputText [ngModel]="searchValue" (keydown.enter)="onSearch(searchInput)" [style]="{width: '900px'}" [placeholder]="'books.search' | transloco"/>
+</span>

@@ -1,0 +1,13 @@
+<p-card [style]="{ width: '900px' }" [header]="title" [subheader]="subtitle">
+  <div class="">
+    <img *ngIf="thumbnail" [src]="thumbnail" [alt]="title" />
+    <p *ngIf="description">{{ description }}</p>
+
+  </div>
+  <ng-template pTemplate="footer">
+    <span>{{ 'books.authors' | transloco }}:</span>
+    <span>
+      {{ book.volumeInfo.authors | joinAuthors }}
+    </span>
+  </ng-template>
+</p-card>

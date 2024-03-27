@@ -1,0 +1,21 @@
+@import 'primeng/resources/themes/bootstrap4-light-blue/theme.css';
+@import 'primeng/resources/primeng.css';
+@import 'primeflex/primeflex.css';
+@import 'primeicons/primeicons.css';
+
+.p-card .p-card-body {
+  padding: 0;
+  background-color: #fffafa;
+  border: 1px solid #fffafa
+}
+
+.p-card .p-card-subtitle,
+.p-card .p-card-title {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.p-card .p-card-header,
+.p-card .p-card-footer,
+.p-card .p-card-content {
+  padding: 1rem;
+}

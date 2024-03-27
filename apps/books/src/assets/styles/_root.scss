@@ -1,0 +1,13 @@
+:root {
+  --color-bg-light: #f3fcfe;
+  --color-text-dark: #212529;
+  --color-text-light: #fff;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text-dark);
+}

@@ -1,0 +1,8 @@
+<div class="flex flex-column align-items-center p-4 h-full">
+  <lib-books-search [searchValue]="query$ | async" (search)="search($event)" class="mb-4 flex-none" />
+  <div class="flex-auto overflow-auto min-h-0 p-2">
+    <ng-container *ngFor="let book of books$ | async">
+      <lib-book-preview [book]="book" class="mb-4" />
+    </ng-container>
+  </div>
+</div>

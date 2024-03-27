@@ -1,0 +1,12 @@
+{
+  "appTitle": "Bücher",
+  "headerMenu": {
+    "books": "Bücher suchen"
+  },
+  "welcome": "Willkommen bei der Bücher-App!",
+  "books": {
+    "search": "Suche nach Büchern",
+    "authors": "Geschrieben von",
+    "unknownAuthor": "Unbekannter Autor"
+  }
+}

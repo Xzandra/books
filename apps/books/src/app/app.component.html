@@ -1,1 +1,9 @@
-<app-nx-welcome></app-nx-welcome> <router-outlet></router-outlet>
+<div class="root-container flex flex-column">
+  <div class="flex-none">
+    <lib-header />
+  </div>
+  <div class="flex-1 min-h-0">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<p-toast key="root"></p-toast>

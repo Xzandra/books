@@ -1,0 +1,10 @@
+<p-menubar [model]="items">
+  <ng-template pTemplate="start">
+    <a [routerLink]="homeLink">
+      <span class="application-title">{{ 'appTitle' | transloco }}</span>
+    </a>
+  </ng-template>
+  <ng-template pTemplate="end">
+    <lib-language-toggler />
+  </ng-template>
+</p-menubar>

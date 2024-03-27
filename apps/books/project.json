@@ -34,12 +34,29 @@
               "maximumError": "4kb"
             }
           ],
-          "outputHashing": "all"
+          "outputHashing": "all",
+          "fileReplacements": [
+            {
+              "replace": "apps/books/src/environments/environment.ts",
+              "with": "apps/books/src/environments/environment.production.ts"
+            }
+          ]
         },
         "development": {
           "optimization": false,
           "extractLicenses": false,
-          "sourceMap": true
+          "sourceMap": {
+            "scripts": true,
+            "styles": true,
+            "hidden": false,
+            "vendor": true
+          },
+          "fileReplacements": [
+            {
+              "replace": "apps/books/src/environments/environment.ts",
+              "with": "apps/books/src/environments/environment.development.ts"
+            }
+          ]
         }
       },
       "defaultConfiguration": "production"
