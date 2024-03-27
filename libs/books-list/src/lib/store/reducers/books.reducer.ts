@@ -28,6 +28,12 @@ const reducer = createReducer(
     books: [],
     error: errorMsg,
   })),
+  on(SearchBookActions.searchBooksClear, (state) => ({
+    ...state,
+    searching: false,
+    books: [],
+    error: undefined,
+  })),
 );
 
 export const BooksReducer = (state = initialState, action: Action): BooksState => {

@@ -37,7 +37,7 @@ export class BookEffects {
 
   readonly #searchBooks = (lang: string, query?: string | null) => {
     if (isEmpty(query)) {
-      return EMPTY;
+      return of(SearchBookActions.searchBooksClear());
     }
     return this.#googleBooks.searchBooks(query ?? '', lang).pipe(
       take(1),
